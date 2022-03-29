@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-//CUSTOM KOOK QUE SE ENCARGA DE MANEJAR LOS FORMULARIOS
-//si no recibe nada el valor inicial es un objeto vacio
+//ESTE CUSTOM KOOK SE ENCARGA DE MANEJAR LOS FORMULARIOS
+
 export const useForm = (initialState = {}) => {
-    //recibe un objeto con los datos/campos del formulario al cual se quiere modificar
+    //recibe un objeto con los datos/campos del formulario, al cual se quiere modificar.
     const [formValue, setValueForm] = useState(initialState);
 
-    //para inicializar el formulario es decir resetear o limpiar
+    //para inicializar el formulario
     const reset=()=>{
         setValueForm(initialState);
     }

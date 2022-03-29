@@ -5,7 +5,7 @@ export const useCounter = (initialState = 10) => {
 
   const [counter, setCounter] = useState(initialState);
 
-  //el factor por defecto es 1, incrementa o decrementa en 1.
+
   const increment = () => {
     setCounter(counter + 1);
   };
@@ -18,6 +18,6 @@ export const useCounter = (initialState = 10) => {
     setCounter(initialState);
   };
 
-  //retorna un objeto con la logica del hook, tambien pude retornar un Array
+  //puede retornar un Array u Objeto con la logica del hook.
   return { counter, increment, decrement, reset };
 };
