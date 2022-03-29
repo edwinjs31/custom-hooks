@@ -7,7 +7,11 @@ Ejemplo de uso:
 ```
 
 useCounter(n) //recibe un valor por defecto(n).
+
 counter //es un tipo numérico.
+
 increment() //es una funcion.
+
 decrement() //es una funcion.
+
 reset() //es una funcion.
